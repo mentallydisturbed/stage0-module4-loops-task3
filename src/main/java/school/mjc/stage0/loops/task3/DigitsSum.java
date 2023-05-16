@@ -5,6 +5,7 @@ public class DigitsSum {
         int sum = 0;
         String s = "" + t;
         for(int i = 0; i < s.length(); i++) {
+            if(s.charAt(i) == '-') continue;
             sum += s.charAt(i) - '0';
         }
         System.out.println(sum);
